@@ -1,0 +1,19 @@
+     
+img {
+  border-radius: 50%;
+}
+h1 {
+    background-color: #d5f4;
+    display: inline;
+}
+h2 {
+    background-color: lightgreen;
+}
+
+body {
+background-color: #fefbd8;
+}
+
+ul {
+list-style: none;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px;
+      /* only for demonstration, should be removed */
+      background: #ccc;
+      padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 40%;
+      background-color: #f1f1f1;
+      height: 300px;
+      /* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #888;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Greece</h1>
+  <p></p>
+
+  <header>
+    <h2>ATHENS</h2>
+  </header>
+
+  <section>
+    <article>
+      <h1>Greece</h1>
+      <p><strong>Welcome to Athens</strong></p>
+      <p>Athens is the capital and largest city of Greece. A major coastal urban area in the Mediterranean, Athens is
+        also the capital of the Attica region and is the southernmost capital on the European mainland. With its urban
+        area's population numbering over three and a quarter million, it is the eighth largest urban area in the
+        European Union. The Municipality of Athens (also City of Athens), which constitutes a small administrative unit
+        of the entire urban area, had a population of 643,452 (2021) within its official limits, and a land area of
+        38.96 km2 (15.04 sq mi). </p>
+      <P>The Athens Marathon takes place in November every year and is recognized as the original marathon course. In
+        1896 the organizing committee who revived the modern Olympics, were inspired by the bravery of the Athenians at
+        the Battle of Marathon in 490 B.C., as well as the legend of the messenger who ran from the town of Marathon to
+        Athens with the news of victory. The Athens Marathon starts near the battle field area at Marathon and finishes
+        in the magnificent all marble Panathenaic Stadium that was built for the first modern Olympics of 1896, it is a
+        short distance from the Acropolis. You will be running in the footsteps of the ancient heroes and legends who
+        gave birth to western civilization. </P>
+    </article>
+    <img src="./Greece.jpg" alt="Greece" width="450" height="290">
+    <iframe width="450" height="290" src="https://www.youtube.com/embed/fL3Cy7VJEHU"
+      title="Visit Greece | Athens (Full version)" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+  <div>
+    <audio controls autoplay>
+        <source src="better-day.mp3" type="audio/mp3">
+    </audio>
+</div>
+  <footer>
+    <a href="../frontpage.html">back to the homepage</a>
+  </footer>
+
+</body>
+
+</html>
